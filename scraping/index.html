@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>뉴스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="title">
+    <meta name="Description">
+    <meta name="Keywords">
+    <meta name="Author" content="">
+    <meta name="robots" content="ALL">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <!--  Swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>News Scraping</title>
 </head>
     <body>
-        <h1>ok</h1>
+        <header id="newHeader">
+            <h1>연합 뉴스 - 핫 뉴스</h1>
+        </header>
+        <div class="news_contents_wrap">
+            <!-- Swiper -->
+            <div class="swiper-container news_wrap" id="newList">
+                <div class="swiper-wrapper news_list">
+
+                </div>
+                <div class="swiper-pagination custom-color"></div>
+            </div>
+            <div class="loding_dimm">
+                <div class="face-load hidden-txt">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="js/request.js"></script>
 </html>
